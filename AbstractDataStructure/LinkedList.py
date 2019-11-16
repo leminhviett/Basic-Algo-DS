@@ -84,7 +84,3 @@ class DoublyLinkedList:
             current = current.next
         s += "None"
         return s
-
-
-
-
