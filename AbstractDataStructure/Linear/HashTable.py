@@ -1,4 +1,4 @@
-from AbstractDataStructure.LinkedList import SinglyLinkedList
+from AbstractDataStructure.Linear.LinkedList import SinglyLinkedList
 
 class HashTable:
     def __init__(self, size):
