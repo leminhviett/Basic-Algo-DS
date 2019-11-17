@@ -47,21 +47,21 @@ class SinglyLinkedList:
             current.next = None
 
 
-test = SinglyLinkedList()
-print(test)
-test.insertTail(0)
-test.insertTail(1)
-test.insertTail(2)
-print(test)
-
-test.insertHead(-1)
-print(test)
-test.deletionTail()
-print(test)
-test.deletionTail()
-test.deletionTail()
-test.deletionTail()
-test.deletionTail()
+# test = SinglyLinkedList()
+# print(test)
+# test.insertTail(0)
+# test.insertTail(1)
+# test.insertTail(2)
+# print(test)
+#
+# test.insertHead(-1)
+# print(test)
+# test.deletionTail()
+# print(test)
+# test.deletionTail()
+# test.deletionTail()
+# test.deletionTail()
+# test.deletionTail()
 
 class DoublyLinkedList:
     def __init__(self):
