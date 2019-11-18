@@ -124,22 +124,22 @@ class PriorityQueue:
 
 
 
-test = PriorityQueue(4)
-test.insertItem(4, 1)
-test.insertItem(5, 2)
-test.insertItem(10, 1)
-test.insertItem(-4, 3)
-print(test)
+# test = PriorityQueue(4)
+# test.insertItem(4, 1)
+# test.insertItem(5, 2)
+# test.insertItem(10, 1)
+# test.insertItem(-4, 3)
+# print(test)
+#
+# test.insertItem(-4, 3)
+# print("Min key = ", test.minKey())
+# print("Min element = ", test.minElement())
+#
+# print(test.removeMin())
+# print(test)
 
-test.insertItem(-4, 3)
-print("Min key = ", test.minKey())
-print("Min element = ", test.minElement())
 
-print(test.removeMin())
-print(test)
-
-
-
+#TODO: Application of Priority Queue
 
 
 

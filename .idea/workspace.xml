@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2914dd-ca5c-43ff-9120-b763680d4926" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/HashTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/LinkedList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/Queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/RankADT.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/Stack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear_AbstractDataStructure/Linear/__init__.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +14,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Linear/HashTable.py">
+        <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+            <state relative-caret-position="357">
+              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+              <folding>
+                <element signature="e#364#428#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,6 +49,7 @@
         <option value="$PROJECT_DIR$/AbstractDataStructure/HashTable.py" />
         <option value="$PROJECT_DIR$/Linear_AbstractDataStructure/HashTable.py" />
         <option value="$PROJECT_DIR$/AbstractDataStructure/Linear/HashTable.py" />
+        <option value="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" />
       </list>
     </option>
   </component>
@@ -83,7 +82,7 @@
               <item name="Basic-Algo-DS" type="b2602c69:ProjectViewProjectNode" />
               <item name="Basic-Algo-DS" type="462c0819:PsiDirectoryNode" />
               <item name="AbstractDataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="Linear" type="462c0819:PsiDirectoryNode" />
+              <item name="Hierachical" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HashTable">
+  <component name="RunManager" selected="Python.Tree">
     <configuration name="HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Basic-Algo-DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Basic-Algo-DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,11 +185,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AbstractDataStructure" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AbstractDataStructure/Hierachical" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AbstractDataStructure/Stack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tree" />
         <item itemvalue="Python.HashTable" />
         <item itemvalue="Python.Vector" />
         <item itemvalue="Python.LinkedList" />
         <item itemvalue="Python.Queue" />
-        <item itemvalue="Python.Stack" />
       </list>
     </recent_temporary>
   </component>
@@ -247,18 +246,18 @@
     <frame x="71" y="-7" width="1472" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2339833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2339833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25435072" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25301206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2128514" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2128514" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -356,6 +355,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          <folding>
+            <element signature="e#364#428#0" />
+          </folding>
         </state>
       </provider>
     </entry>
