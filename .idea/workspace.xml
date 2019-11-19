@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2914dd-ca5c-43ff-9120-b763680d4926" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/Sorting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,21 +14,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py">
+        <entry file="file://$PROJECT_DIR$/Algo/Sorting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Linear/RankADT.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
-                <element signature="e#18#1629#0" />
+                <element signature="e#67#713#0" />
+                <element signature="e#710#744#0" />
+                <element signature="e#818#993#0" />
+                <element signature="e#987#1036#0" />
               </folding>
             </state>
           </provider>
@@ -60,13 +54,14 @@
         <option value="$PROJECT_DIR$/AbstractDataStructure/Linear/HashTable.py" />
         <option value="$PROJECT_DIR$/AbstractDataStructure/Linear/RankADT.py" />
         <option value="$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py" />
+        <option value="$PROJECT_DIR$/Algo/Sorting.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="90" />
-    <option name="width" value="929" />
-    <option name="height" value="1089" />
+    <option name="width" value="928" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,7 +71,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,10 +95,16 @@
               <item name="AbstractDataStructure" type="462c0819:PsiDirectoryNode" />
               <item name="Linear" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Basic-Algo-DS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic-Algo-DS" type="462c0819:PsiDirectoryNode" />
+              <item name="Algo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tree">
+  <component name="RunManager" selected="Python.Sorting">
     <configuration name="HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Basic-Algo-DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Sorting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Basic-Algo-DS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +180,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AbstractDataStructure" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AbstractDataStructure/Queue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algo/Sorting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Sorting" />
         <item itemvalue="Python.Tree" />
         <item itemvalue="Python.HashTable" />
         <item itemvalue="Python.Vector" />
         <item itemvalue="Python.LinkedList" />
-        <item itemvalue="Python.Queue" />
       </list>
     </recent_temporary>
   </component>
@@ -271,18 +271,18 @@
     <frame x="71" y="-7" width="1472" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09610028" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14972144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25301206" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27443105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.14993307" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39759037" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32797858" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -372,19 +372,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Linear/RankADT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
+        <state relative-caret-position="365">
           <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
           <folding>
             <element signature="e#18#1629#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbstractDataStructure/Hierachical/Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="143" column="11" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algo/Sorting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding>
+            <element signature="e#67#713#0" />
+            <element signature="e#710#744#0" />
+            <element signature="e#818#993#0" />
+            <element signature="e#987#1036#0" />
           </folding>
         </state>
       </provider>
