@@ -15,24 +15,32 @@ class BinTree:
     def __init__(self):
         self.root = Node(None, None, None, None)
         self.store = ""
-    def insert(self, val, current_root = None):
+    def insert(self, node_inserting, current_root = None):
+        if(self.root.data == None):
+            self.root = node_inserting
+            return
+
         if(current_root == None):
             current_root = self.root
-
         if(current_root.data == None):
-            current_root.data = val
+            node_inserting.parent = current_root
+            current_root.data = node_inserting.data
         else:
-            if(current_root.data < val):
+            if(current_root.data < node_inserting.data):
                 if(current_root.node_r == None):
-                    current_root.node_r = Node(current_root.node_r, val, None, None)
+                    node_inserting.parent = current_root
+                    current_root.node_r = node_inserting
+
                 else:
-                    self.insert(val, current_root = current_root.node_r)
+                    self.insert(node_inserting, current_root = current_root.node_r)
             else:
                 if (current_root.node_l == None):
-                    current_root.node_l = Node(current_root.node_l, val, None, None)
+                    node_inserting.parent = current_root
+                    current_root.node_l = node_inserting
                 else:
-                    self.insert(val, current_root=current_root.node_l)
+                    self.insert(node_inserting, current_root = current_root.node_l)
     def __str__(self):
+        self.store = ""
         def preOrder(root='special_char'):
             if (root == 'special_char'):
                 root = self.root
@@ -44,6 +52,45 @@ class BinTree:
         return self.store
 
     #TODO: deltion for Binary tree
+    def subDel(self, node_ref):
+        # Delete node having 1/0 child
+        if (node_ref.node_l == None):
+            child = node_ref.node_r
+        else:
+            child = node_ref.node_l
+
+            ##del Root
+        if (node_ref == self.root):
+            if (child != None):
+                child.parent = None
+                return
+            ## del internal node
+        if (node_ref.parent.node_l == node_ref):
+            node_ref.parent.node_l = child
+        else:
+            node_ref.parent.node_r = child
+        if (child != None):
+            child.parent = node_ref.parent
+            return
+        else:
+            # del external node (leaves)
+            # this case child == None
+            node_ref.parent = None
+    def deleteNode(self, node_ref):
+        if(node_ref.node_l == None or node_ref.node_r == None):
+            self.subDel(node_ref)
+        else:
+            min_refRight = node_ref.node_r
+            while(min_refRight.node_l != None):
+                min_refRight = min_refRight.node_l #assign most left of node_ref.node_r
+
+            node_ref.data = min_refRight.data #replace node_ref with node min
+            self.subDel(min_refRight)
+
+
+
+
+
 
 
 
@@ -61,21 +108,43 @@ class BinTree:
 # preOrder(root)
 
 test = BinTree()
-test.insert(val=5)
-test.insert(val=8)
-test.insert(val=10)
-test.insert(val=1)
-test.insert(val=90)
-test.insert(val=-5)
-test.insert(val=-8)
+n1 = Node(None, 5, None, None)
+n2 = Node(None, 2, None, None)
+n3 = Node(None, 8, None, None)
+n4 = Node(None, 4, None, None)
+n5 = Node(None, 15, None, None)
+n6 = Node(None, 3, None, None)
+n8 = Node(None, 7, None, None)
+n9 = Node(None, 10, None, None)
+n10 = Node(None, 12, None, None)
+n11 = Node(None, 9, None, None)
 
-test.insert(val=-0)
 
+test.insert(n1)
+test.insert(n2)
+test.insert(n3)
+test.insert(n4)
+test.insert(n5)
+test.insert(n6)
+test.insert(n8)
+test.insert(n9)
+test.insert(n10)
+test.insert(n11)
 
-preOrder(test.root)
-print()
+# preOrder(test.root)
+# print()
+
+#test Del node func
+print(test)
+test.deleteNode(n4)
+print(test)
+test.deleteNode(n6)
+print(test)
+test.deleteNode(n3)
 print(test)
 
+test.deleteNode(n1)
+print(test)
 
 
 
